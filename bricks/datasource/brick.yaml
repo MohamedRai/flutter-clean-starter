@@ -1,0 +1,33 @@
+name: datasource
+description: "An abstract data source plus its remote (Dio) or local (KeyValueStorage) implementation and a test."
+version: 0.1.0+1
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  feature:
+    type: string
+    description: Feature folder, snake_case (e.g. orders)
+    default: orders
+    prompt: Which feature (folder under lib/features)?
+
+  name:
+    type: string
+    description: Entity the data source serves (e.g. customer)
+    default: customer
+    prompt: Entity name?
+
+  type:
+    type: enum
+    description: Where the data comes from
+    default: remote
+    prompt: Data source type?
+    values:
+      - remote
+      - local
+  endpoint:
+    type: string
+    description: API path (remote only, e.g. /customers)
+    default: /items
+    prompt: API endpoint (remote only)?

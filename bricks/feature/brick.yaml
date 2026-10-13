@@ -1,0 +1,24 @@
+name: feature
+description: "A complete Clean Architecture feature: entity, model, remote data source, repository, use case, cubit, page, DI module and tests."
+version: 0.1.0+1
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  feature:
+    type: string
+    description: Feature folder, snake_case (e.g. orders)
+    default: orders
+    prompt: Which feature (folder under lib/features)?
+
+  entity:
+    type: string
+    description: Main entity, singular (e.g. order)
+    default: order
+    prompt: Main entity name (singular)?
+  endpoint:
+    type: string
+    description: API path of the collection (e.g. /orders)
+    default: /orders
+    prompt: API endpoint?

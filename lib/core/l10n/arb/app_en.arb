@@ -1,0 +1,152 @@
+{
+  "@@locale": "en",
+  "appTitle": "Clean Starter",
+  "@appTitle": {
+    "description": "Application name shown in the app bar and task switcher."
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Button that retries a failed action."
+  },
+  "loading": "Loading…",
+  "@loading": {
+    "description": "Accessibility label for loading indicators."
+  },
+  "emptyGeneric": "Nothing here yet.",
+  "@emptyGeneric": {
+    "description": "Default empty-state message."
+  },
+  "failureServer": "Something went wrong on our side. Please try again later.",
+  "@failureServer": {
+    "description": "Shown for server errors."
+  },
+  "failureNetwork": "Can't reach the server. Check your connection and try again.",
+  "@failureNetwork": {
+    "description": "Shown when offline or on timeout."
+  },
+  "failureCache": "No saved data is available.",
+  "@failureCache": {
+    "description": "Shown when offline data is missing."
+  },
+  "failureUnauthorized": "Your session has expired. Please sign in again.",
+  "@failureUnauthorized": {
+    "description": "Shown on HTTP 401."
+  },
+  "failureForbidden": "You don't have permission to do this.",
+  "@failureForbidden": {
+    "description": "Shown on HTTP 403."
+  },
+  "failureNotFound": "We couldn't find what you were looking for.",
+  "@failureNotFound": {
+    "description": "Shown on HTTP 404."
+  },
+  "failureBadRequest": "The request couldn't be processed. Please check your input.",
+  "@failureBadRequest": {
+    "description": "Shown on HTTP 400/409."
+  },
+  "failureRateLimit": "Too many requests. Please wait a moment and try again.",
+  "@failureRateLimit": {
+    "description": "Shown on HTTP 429."
+  },
+  "failureValidation": "Please check the highlighted fields.",
+  "@failureValidation": {
+    "description": "Shown for validation failures."
+  },
+  "failureUnknown": "An unexpected error occurred. Please try again.",
+  "@failureUnknown": {
+    "description": "Fallback error message."
+  },
+  "navPosts": "Posts",
+  "@navPosts": {
+    "description": "Bottom navigation label for the posts tab."
+  },
+  "navSettings": "Settings",
+  "@navSettings": {
+    "description": "Bottom navigation label for the settings tab."
+  },
+  "settingsTheme": "Theme",
+  "@settingsTheme": {
+    "description": "Settings section title for theme mode."
+  },
+  "themeSystem": "System",
+  "@themeSystem": {
+    "description": "Follow the system theme."
+  },
+  "themeLight": "Light",
+  "@themeLight": {
+    "description": "Light theme."
+  },
+  "themeDark": "Dark",
+  "@themeDark": {
+    "description": "Dark theme."
+  },
+  "settingsLanguage": "Language",
+  "@settingsLanguage": {
+    "description": "Settings section title for the app language."
+  },
+  "languageSystem": "System default",
+  "@languageSystem": {
+    "description": "Follow the device language."
+  },
+  "settingsAccount": "Account",
+  "@settingsAccount": {
+    "description": "Settings entry for the protected account page."
+  },
+  "accountTitle": "Account",
+  "@accountTitle": {
+    "description": "Title of the protected account page."
+  },
+  "accountSignedIn": "You are signed in (demo session).",
+  "@accountSignedIn": {
+    "description": "Body of the account page."
+  },
+  "signOut": "Sign out",
+  "@signOut": {
+    "description": "Sign-out button."
+  },
+  "signInTitle": "Sign in",
+  "@signInTitle": {
+    "description": "Title of the sign-in page."
+  },
+  "signInMessage": "This page demonstrates the router's auth guard. Sign in to open the account page.",
+  "@signInMessage": {
+    "description": "Explains the demo sign-in page."
+  },
+  "signInButton": "Sign in (demo)",
+  "@signInButton": {
+    "description": "Starts a demo session."
+  },
+  "notFoundTitle": "Page not found",
+  "@notFoundTitle": {
+    "description": "Title of the 404 page."
+  },
+  "notFoundMessage": "The page you requested doesn't exist.",
+  "@notFoundMessage": {
+    "description": "Body of the 404 page."
+  },
+  "goHome": "Go home",
+  "@goHome": {
+    "description": "Button that navigates to the home page."
+  },
+  "postsTitle": "Posts",
+  "@postsTitle": {
+    "description": "Title of the posts list page."
+  },
+  "postsEmpty": "No posts yet.",
+  "@postsEmpty": {
+    "description": "Empty state of the posts list."
+  },
+  "postDetailTitle": "Post",
+  "@postDetailTitle": {
+    "description": "Title of the post detail page."
+  },
+  "postAuthor": "By user #{userId}",
+  "@postAuthor": {
+    "description": "Author line of a post.",
+    "placeholders": {
+      "userId": {
+        "type": "int"
+      }
+    }
+  }
+}

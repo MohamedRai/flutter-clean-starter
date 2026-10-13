@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(flutter analyze:*)",
+      "Bash(flutter test:*)",
+      "Bash(flutter pub get:*)",
+      "Bash(flutter pub outdated:*)",
+      "Bash(flutter gen-l10n:*)",
+      "Bash(flutter doctor:*)",
+      "Bash(flutter devices:*)",
+      "Bash(dart format:*)",
+      "Bash(dart fix:*)",
+      "Bash(dart analyze:*)",
+      "Bash(dart run build_runner build:*)",
+      "Bash(dart run tool/remove_example.dart --dry-run)",
+      "Bash(mason make:*)",
+      "Bash(mason get:*)",
+      "Bash(mason list:*)",
+      "Bash(make analyze:*)",
+      "Bash(make format:*)",
+      "Bash(make test:*)",
+      "Bash(make coverage:*)",
+      "Bash(make gen:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)"
+    ],
+    "deny": [
+      "Read(./env/dev.json)",
+      "Read(./env/staging.json)",
+      "Read(./env/prod.json)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "dart \"$CLAUDE_PROJECT_DIR/tool/claude/format_hook.dart\"",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+# build_runner configuration. See docs/code-generation.md.
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          explicit_to_json: true
+          include_if_null: false
+      freezed:
+        options:
+          # Models only need copyWith/==/toString + JSON.
+          map: false
+          when: false
+      injectable_generator:injectable_builder:
+        generate_for:
+          - lib/**.dart
+      go_router_builder:
+        generate_for:
+          - lib/app/router/**.dart

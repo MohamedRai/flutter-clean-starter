@@ -1,0 +1,165 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
+
+part of 'post_model.dart';
+
+// **************************************************************************
+// FreezedGenerator
+// **************************************************************************
+
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// dart format off
+T _$identity<T>(T value) => value;
+
+/// @nodoc
+mixin _$PostModel {
+
+ int get id; int get userId; String get title; String get body;
+/// Create a copy of PostModel
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$PostModelCopyWith<PostModel> get copyWith => _$PostModelCopyWithImpl<PostModel>(this as PostModel, _$identity);
+
+  /// Serializes this PostModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  final _this = this as PostModel;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is PostModel&&(identical(other.id, _this.id) || other.id == _this.id)&&(identical(other.userId, _this.userId) || other.userId == _this.userId)&&(identical(other.title, _this.title) || other.title == _this.title)&&(identical(other.body, _this.body) || other.body == _this.body));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode {
+  final _this = this as PostModel;
+  return Object.hash(runtimeType,_this.id,_this.userId,_this.title,_this.body);
+}
+
+@override
+String toString() {
+  final _this = this as PostModel;
+  return 'PostModel(id: ${_this.id}, userId: ${_this.userId}, title: ${_this.title}, body: ${_this.body})';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $PostModelCopyWith<$Res>  {
+  factory $PostModelCopyWith(PostModel value, $Res Function(PostModel) _then) = _$PostModelCopyWithImpl;
+@useResult
+$Res call({
+ int id, int userId, String title, String body
+});
+
+
+
+
+}
+/// @nodoc
+class _$PostModelCopyWithImpl<$Res>
+    implements $PostModelCopyWith<$Res> {
+  _$PostModelCopyWithImpl(this._self, this._then);
+
+  final PostModel _self;
+  final $Res Function(PostModel) _then;
+
+/// Create a copy of PostModel
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? userId = null,Object? title = null,Object? body = null,}) {
+  return _then(PostModel(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,userId: null == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as int,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as String,body: null == body ? _self.body : body // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+}
+
+
+
+/// @nodoc
+@JsonSerializable()
+
+class _PostModel extends PostModel {
+  const _PostModel({required this.id, required this.userId, required this.title, required this.body}): super._();
+  factory _PostModel.fromJson(Map<String, dynamic> json) => _$PostModelFromJson(json);
+
+@override final  int id;
+@override final  int userId;
+@override final  String title;
+@override final  String body;
+
+/// Create a copy of PostModel
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$PostModelCopyWith<_PostModel> get copyWith => __$PostModelCopyWithImpl<_PostModel>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$PostModelToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _PostModel&&(identical(other.id, id) || other.id == id)&&(identical(other.userId, userId) || other.userId == userId)&&(identical(other.title, title) || other.title == title)&&(identical(other.body, body) || other.body == body));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode {
+    return Object.hash(runtimeType,id,userId,title,body);
+}
+
+@override
+String toString() {
+    return 'PostModel(id: $id, userId: $userId, title: $title, body: $body)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$PostModelCopyWith<$Res> implements $PostModelCopyWith<$Res> {
+  factory _$PostModelCopyWith(_PostModel value, $Res Function(_PostModel) _then) = __$PostModelCopyWithImpl;
+@override @useResult
+$Res call({
+ int id, int userId, String title, String body
+});
+
+
+
+
+}
+/// @nodoc
+class __$PostModelCopyWithImpl<$Res>
+    implements _$PostModelCopyWith<$Res> {
+  __$PostModelCopyWithImpl(this._self, this._then);
+
+  final _PostModel _self;
+  final $Res Function(_PostModel) _then;
+
+/// Create a copy of PostModel
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? userId = null,Object? title = null,Object? body = null,}) {
+  return _then(_PostModel(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,userId: null == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as int,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
+as String,body: null == body ? _self.body : body // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
+// dart format on

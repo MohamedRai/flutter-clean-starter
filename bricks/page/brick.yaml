@@ -1,0 +1,19 @@
+name: page
+description: "A page widget plus a widget test; prints the route snippet to register it."
+version: 0.1.0+1
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  feature:
+    type: string
+    description: Feature folder, snake_case (e.g. orders)
+    default: orders
+    prompt: Which feature (folder under lib/features)?
+
+  name:
+    type: string
+    description: Page name without suffix (e.g. order_detail)
+    default: item_detail
+    prompt: Page name?

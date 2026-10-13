@@ -1,0 +1,8 @@
+# gen-l10n configuration. Run `flutter gen-l10n` (or any `flutter run/build`)
+# after editing ARB files. See docs/localization.md.
+arb-dir: lib/core/l10n/arb
+template-arb-file: app_en.arb
+output-dir: lib/core/l10n/gen
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+nullable-getter: false

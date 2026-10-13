@@ -1,0 +1,48 @@
+name: usecase
+description: "A single-action use case that calls a repository method, plus its test. Registers itself in the feature's DI module."
+version: 0.1.0+1
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  feature:
+    type: string
+    description: Feature folder, snake_case (e.g. orders)
+    default: orders
+    prompt: Which feature (folder under lib/features)?
+
+  name:
+    type: string
+    description: Use case, verb first (e.g. get_customer_by_id)
+    default: get_item_by_id
+    prompt: Use case name?
+
+  entity:
+    type: string
+    description: Entity whose repository is called (e.g. customer)
+    default: item
+    prompt: Repository entity?
+  method:
+    type: string
+    description: Repository method to call (must exist, e.g. getById)
+    default: getById
+    prompt: Repository method?
+  returns:
+    type: enum
+    description: What the use case returns
+    default: entity
+    prompt: Return type?
+    values:
+      - entity
+      - list
+      - nothing
+  params:
+    type: enum
+    description: Input of the use case
+    default: id
+    prompt: Parameters?
+    values:
+      - none
+      - id
+      - custom

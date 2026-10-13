@@ -1,0 +1,20 @@
+# Local code-generation bricks. Run `mason get` once after cloning, then e.g.
+#   mason make feature --feature orders --entity order --endpoint /orders
+# See docs/mason-bricks.md.
+bricks:
+  feature:
+    path: bricks/feature
+  usecase:
+    path: bricks/usecase
+  bloc:
+    path: bricks/bloc
+  cubit:
+    path: bricks/cubit
+  repository:
+    path: bricks/repository
+  datasource:
+    path: bricks/datasource
+  page:
+    path: bricks/page
+  model:
+    path: bricks/model

@@ -1,0 +1,38 @@
+# Strict lints for the whole project. See docs/testing.md and CLAUDE.md for the
+# coding standards these rules enforce.
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    # Generated code — never hand-edited, never linted.
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.config.dart"
+    - "**/*.gr.dart"
+    - "**/*.gen.dart"
+    - lib/core/assets/**
+    - "**/*.mocks.dart"
+    - lib/core/l10n/gen/**
+    # Mason templates contain {{mustache}} placeholders and are not valid Dart.
+    - bricks/**
+    - build/**
+    - android/**
+    - ios/**
+  errors:
+    # freezed + json_serializable put @JsonKey on constructor parameters.
+    invalid_annotation_target: ignore
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+
+linter:
+  rules:
+    # Dart 3.13's `new(...)` constructor shorthand is still unfamiliar to most
+    # Flutter developers; keep classic `ClassName(...)` constructors.
+    unnecessary_type_name_in_constructor: false
+    # Never ship print statements — use AppLogger.
+    avoid_print: true
+    # Prefer relative imports inside lib/ is NOT allowed: package imports only.
+    always_use_package_imports: true
+    prefer_relative_imports: false

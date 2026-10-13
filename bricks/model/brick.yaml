@@ -1,0 +1,19 @@
+name: model
+description: "A domain entity plus its freezed/json model with toEntity()/fromEntity() and a test."
+version: 0.1.0+1
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  feature:
+    type: string
+    description: Feature folder, snake_case (e.g. orders)
+    default: orders
+    prompt: Which feature (folder under lib/features)?
+
+  name:
+    type: string
+    description: Entity name, singular (e.g. customer)
+    default: customer
+    prompt: Entity name?

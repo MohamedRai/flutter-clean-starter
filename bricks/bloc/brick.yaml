@@ -1,0 +1,19 @@
+name: bloc
+description: "A Bloc with sealed events and states (Equatable) plus a bloc_test file."
+version: 0.1.0+1
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  feature:
+    type: string
+    description: Feature folder, snake_case (e.g. orders)
+    default: orders
+    prompt: Which feature (folder under lib/features)?
+
+  name:
+    type: string
+    description: Bloc name without suffix (e.g. order_filter)
+    default: item_list
+    prompt: Bloc name?
